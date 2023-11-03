@@ -430,8 +430,18 @@
             </p> 
             <form class="review-form">
                 <div class="review-form-field-wrapper">
-                    <label for="" class="review-form-field-label">Name</label>
-                    <input type="text" class="review-form-field" name="user_first_name" id="user_first_name">
+                    <label for="user_first_name" class="review-form-field-label">
+                        Name
+                    </label>
+                    <input 
+                        type="text" 
+                        class="review-form-field" 
+                        name="user_first_name" 
+                        id="user_first_name"
+                        required 
+                        pattern="[a-zA-Zа-яА-ЯіІїЇ'йЙ]+"
+                        title="Oleksii"
+                    />
                 </div>
 
                 <div class="review-form-field-wrapper">
