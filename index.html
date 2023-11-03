@@ -417,20 +417,19 @@
     <div class="backdrop is-open">
         <div class="modal">
             <button class="modal-close-btn" type="button">
-                <svg class="modal-close-btn-icon">
-                    <use href="./images/icons2s.svg#icon-close" 
-                        width="8px" 
-                        heigh="8px" 
-                        aria-label="modal-close-btn">
-                    </use>
+                <svg class="modal-close-btn-icon"
+                width="8px" 
+                heigh="8px" 
+                aria-label="modal-close-btn">
+                    <use href="./images/icons2s.svg#icon-close"></use>
                 </svg>
             </button>
-            <p class="review-form-decxription">
+            <p class="review-form-decription">
                 Leave your contacts and we will call you back
             </p> 
             <form class="review-form">
                 <div class="review-form-field-wrapper">
-                    <label for="user_first_name" class="review-form-field-label">
+                    <label class="review-form-field-label" for="user_first_name" >
                         Name
                     </label>
                     <input 
@@ -445,38 +444,57 @@
                 </div>
 
                 <div class="review-form-field-wrapper">
-                    <label for="" class="review-form-field-label">
+                    <label class="review-form-field-label" for="user-phone" >
                         Phone
                     </label>
                     <input 
-                    class="review-form-field"
-                    type="text" 
-                    name=""
-                        
+                        class="review-form-field"
+                        type="tel" 
+                        name="user_phone_number"
+                        id="user-phone"
+                        required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        title="xxx-xxx-xx-xx"    
                     />
                 </div>
 
                 <div class="review-form-field-wrapper">
-                    <label for="" class="review-form-field-label">
+                    <label class="review-form-field-label" for="user-email" >
                         Email
                     </label>
-                    <input 
-                    class="review-form-field"
-                    type="email" 
+                    <input
+                    type="email"
+                    class="review-form-field" 
                     name="user_email"
                     id="user-email" 
+                    required
                     />
                 </div>
                 
                 <div class="review-form-field-wrapper">
-                    <label for="" class="review-form-field-label">Comment</label>
-                    <textarea name="" id="" class="review-form-message" placeholder="Text input"></textarea>
+                    <label class="review-form-field-label" for="user-comment" >
+                        Comment
+                    </label>
+                    <textarea 
+                        class="review-form-message" 
+                        name="user_comment" 
+                        id="user-comment" 
+                        placeholder="Text input">
+                    </textarea>
                 </div>
+
                 <div class="review-form-check-box-wrapper">
-                    <input type="checkbox" class="review-form-checkbox">
-                    <label for="" class="review-form-checkbox-label">
+                    <input 
+                        class="review-form-checkbox" 
+                        type="checkbox" 
+                        name="user_policy"
+                        value="true"
+                        id="user-policy"
+                        required
+                        />
+                    <label class="review-form-checkbox-label" for="user-policy">
                         I accept the terms and conditions of the 
-                        <a href="" class="privacy-policy-link">Privacy Policy</a>
+                        <a class="privacy-policy-link" href="">Privacy Policy</a>
                     </label>
                 </div>
                 <button class="review-form-button" type="submit">
