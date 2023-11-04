@@ -426,15 +426,15 @@
             </p> 
             <form class="review-form">
                 <div class="review-form-field-wrapper">
-                    <label class="review-form-field-label" for="user-first-name">
+                    <label class="review-form-field-label" for="user-name">
                         Name
                     </label>
                     <div class="review-contact-form-input">
                         <input 
                             class="review-form-field"
                             type="text"
-                            name="user_first_name" 
-                            id="user-first-name"
+                            name="user-name" 
+                            id="user-name"
                             required 
                             pattern="[a-zA-Zа-яА-ЯіІїЇ'йЙ]+"
                             title="Oleksii"
@@ -489,7 +489,7 @@
                     </label>
                     <textarea 
                         class="review-form-message" 
-                        name="user_comment" 
+                        name="user-comment" 
                         id="user-comment" 
                         placeholder="Text input">
                     </textarea>
@@ -499,12 +499,18 @@
                     <input 
                         class="review-form-checkbox visually-hidden" 
                         type="checkbox" 
-                        name="user_privacy"
+                        name="user-privacy"
                         value="true"
                         id="user-privacy"
                         required
+                        tabinex="0"
                         />
                     <label class="review-form-checkbox-label" for="user-privacy">
+                        <span class="review-form-own-checkbox">
+                            <svg class="review-form-own-checkbox-icon" width="10" heigh="8">
+                                <use href="./images/icons2s.svg#icon-Vector"></use>
+                            </svg>
+                        </span>
                         I accept the terms and conditions of the 
                         <a class="privacy-policy-link" href="">Privacy Policy</a>
                     </label>

@@ -784,13 +784,14 @@ address {
 }
 
 
-.review-form-message:placeholder {
+.review-form-message::placeholder {
     color: rgba(46, 47, 66, 0.40);
 }
 
 .review-form-message:focus {
     border-color: #4D5AE5;
     outline-color: transparent;
+    outline-offset:4px;
 }
     
 
