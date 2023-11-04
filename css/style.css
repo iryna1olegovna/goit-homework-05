@@ -705,7 +705,7 @@ address {
 }
 
 .review-form-decription {
-    color:  #2E2F42;
+   
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -747,8 +747,7 @@ address {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    fill:none; 
-    stroke: #111111;
+    fill: #2e2f42; 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -819,6 +818,7 @@ address {
 
 .review-form-button {
     display: block;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -835,7 +835,7 @@ address {
     margin-bottom: 24px;
 }
 
-.review-form-checkbox:checked + .review-form-checkbox-label + .review-form-own-checkbox {
+.review-form-checkbox:checked + .review-form-checkbox-label .review-form-own-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
