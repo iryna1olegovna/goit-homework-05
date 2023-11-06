@@ -760,7 +760,7 @@ address {
 
 .review-form-field:focus + .review-form-field-icon,
 .review-form-field:hover + .review-form-field-icon {
-    border-color: #4D5AE5;}
+    fill: #4D5AE5;}
 
 .review-contact-form-input {
     position: relative;
