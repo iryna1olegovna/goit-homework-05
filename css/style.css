@@ -66,6 +66,11 @@ button {
     color: #ffffff;
 }
 
+button:hover,
+button:focus {
+    color: #ffffff; 
+}
+
 .button-order{
     font-family: "Roboto", sans-serif
 }
